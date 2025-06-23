@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Abdulkadir Kavak – Portfolio</title>
+  <title>Start – Abdulkadir Kavak</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link href="./styles/styles.css" rel="stylesheet">
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="index.html">Abdulkadir Kavak</a>
+    <a class="navbar-brand" href="../index.html">Abdulkadir Kavak</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="pages/about.html">Über mich</a></li>
-        <li class="nav-item"><a class="nav-link" href="pages/projects.html">Projekte</a></li>
-        <li class="nav-item"><a class="nav-link" href="pages/contact.html">Kontakt</a></li>
+        <li class="nav-item"><a class="nav-link active" href="../index.html">Start</a></li>
+        <li class="nav-item"><a class="nav-link " href="about.html">Über mich</a></li>
+        <li class="nav-item"><a class="nav-link " href="projects.html">Projekte</a></li>
+        <li class="nav-item"><a class="nav-link " href="contact.html">Kontakt</a></li>
+        <li class="nav-item"><a class="nav-link " href="download.html">Download</a></li>
+        <li class="nav-item">
+          <button class="btn btn-sm btn-outline-light ms-3" id="themeToggle">🌓</button>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
+<script>
+  const toggle = document.getElementById('themeToggle');
+  const prefersDark = localStorage.getItem('theme') === 'dark';
 
-<header class="text-white text-center py-5">
-  <div class="container">
-    <h1 class="display-4">Abdulkadir Kavak</h1>
-    <p class="lead">Senior Frontend-Entwickler – Lösungorientiert, erfahren, vielseitig</p>
-    <a href="files/Lebenslauf_Abdulkadir_Kavak.pdf" class="btn btn-light mt-3" download>📄 Lebenslauf herunterladen</a>
-    <a href="files/Arbeitszeugnis Pixelnauten GmbH.pdf" class="btn btn-light mt-3" download>📄 Arbeitszeugnis Pixelnauten GmbH herunterladen</a>
-  </div>
-</header>
+  function setTheme(dark) {
+    document.body.classList.toggle('bg-dark', dark);
+    document.body.classList.toggle('text-light', dark);
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+  }
 
-<section class="py-5">
-  <div class="container text-center">
-    <h2>Willkommen</h2>
-    <p>Willkommen auf meiner professionellen Portfolio-Seite. Entdecken Sie meine Projekte, Erfahrungen und Kontaktmöglichkeiten.</p>
-  </div>
-</section>
+  toggle.addEventListener('click', () => {
+    const isDark = document.body.classList.contains('bg-dark');
+    setTheme(!isDark);
+  });
 
-<footer class="bg-dark text-white text-center py-3">
-  <div class="container">
-    <small>© 2025 Abdulkadir Kavak</small>
-  </div>
-</footer>
+  setTheme(prefersDark);
+</script>
 
+<div class="container py-5">
+  
+<h1>Willkommen</h1>
+<p>Willkommen auf meiner professionellen Portfolio-Seite. Entdecken Sie meine Projekte, Erfahrungen und Kontaktmöglichkeiten.</p>
+<a href="files/Lebenslauf_Abdulkadir_Kavak_Neu.pdf" class="btn btn-outline-primary mt-3" download>📄 Lebenslauf herunterladen</a>
+
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-<!-- Download page link -->
-<!-- Add to navbar if needed -->
