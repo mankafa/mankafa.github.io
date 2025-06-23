@@ -1,66 +1,83 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Profil – Abdulkadir Kavak</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f4f4f4;
-      color: #333;
-      padding: 40px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1 {
-      color: #222;
-      font-size: 2em;
-      margin-bottom: 0.2em;
-    }
-    h2 {
-      color: #444;
-      margin-top: 1.5em;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.2em;
-    }
-    p {
-      margin-bottom: 1em;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abdulkadir Kavak – Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Abdulkadir Kavak</h1>
-  <p>Dortmund | abdulkadirkavak@gmail.com | 0179 4858228</p>
 
-  <h2>Berufliches Profil</h2>
-  <p>
-    Senior Frontend-Entwickler mit über 25 Jahren Programmiererfahrung und einem klaren Fokus auf moderne Webtechnologien in den letzten 8 Jahren.
-    Erfahren in der Entwicklung responsiver, performanter Webanwendungen mit React, Ionic (Angular), Vue.js und Vanilla JavaScript/TypeScript.
-  </p>
-  <p>
-    Zusätzlich fundierte Kenntnisse in PHP (inkl. Symfony für REST-APIs mit JWT), CMS-Lösungen (Drupal), Datenbanken (MySQL, MongoDB)
-    sowie DevOps-Tools wie GIT, Docker, WSL2. Hohe Lösungsorientierung, strukturierte Arbeitsweise und ein gutes Gespür für UI/UX-Design.
-  </p>
-  <p>
-    Aufgeschlossen für neue Herausforderungen in agilen Entwicklungsteams – gerne auch remote oder hybrid.
-  </p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Abdulkadir Kavak</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">Über mich</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projekte</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <h2>Kompetenzen</h2>
-  <ul>
-    <li>React, Ionic (Angular), Vue.js, Vanilla JS/TypeScript</li>
-    <li>PHP & Symfony (JWT, REST-API)</li>
-    <li>Responsive Design, Barrierefreiheit, UX/UI</li>
-    <li>MySQL, MongoDB, Docker, GIT, Cypress</li>
-    <li>SCRUM, CI/CD, Headless CMS</li>
-  </ul>
+<header class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-4">Abdulkadir Kavak</h1>
+    <p class="lead">Senior Frontend-Entwickler – Lösungorientiert, erfahren, vielseitig</p>
+    <a href="Lebenslauf_Abdulkadir_Kavak.pdf" class="btn btn-light mt-3" download>📄 Lebenslauf herunterladen</a>
+  </div>
+</header>
 
-  <h2>Sprachen</h2>
-  <ul>
-    <li>Deutsch: Verhandlungssicher</li>
-    <li>Englisch: Verhandlungssicher</li>
-    <li>Türkisch: Muttersprache</li>
-  </ul>
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="mb-4">Über mich</h2>
+    <p>Ich bin ein erfahrener Frontend-Entwickler mit über 25 Jahren Programmiererfahrung und einem starken Fokus auf moderne Webtechnologien in den letzten 8 Jahren. Ich arbeite mit Frameworks wie React, Ionic, Vue.js und TypeScript, ergänzt durch Backend-Erfahrung mit PHP/Symfony.</p>
+    <p>Ich lege großen Wert auf sauberen Code, UX/UI-Design, Barrierefreiheit und eine pragmatische, lösungsorientierte Arbeitsweise.</p>
+  </div>
+</section>
+
+<section id="projects" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4">Projekte</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Projektname 1</h5>
+            <p class="card-text">Kurze Beschreibung eines Projekts oder einer App. Später mit Link zum GitHub oder zur Live-Demo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Projektname 2</h5>
+            <p class="card-text">Ein weiteres Projekt oder Tool, das du zeigen möchtest. Modular erweiterbar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="mb-4">Kontakt</h2>
+    <p>📧 <a href="mailto:abdulkadirkavak@gmail.com">abdulkadirkavak@gmail.com</a></p>
+    <p>📍 Dortmund, Deutschland</p>
+  </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-3">
+  <div class="container">
+    <small>© 2025 Abdulkadir Kavak</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
