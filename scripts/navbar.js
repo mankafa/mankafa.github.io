@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function setTheme(dark) {
     document.body.classList.toggle("bg-dark", dark);
     document.body.classList.toggle("text-light", dark);
+    document.body.classList.toggle("navbar-light", dark);
     document.body.classList.toggle("transition", true);
     localStorage.setItem("theme", dark ? "dark" : "light");
   }
