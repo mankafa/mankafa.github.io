@@ -32,3 +32,9 @@ header {
 }
 /*#########################*/
 /*    Projects Page End    */
+
+
+#langToggle,
+#themeToggle {
+  border: 0px solid #2d2d2d !important;
+}
