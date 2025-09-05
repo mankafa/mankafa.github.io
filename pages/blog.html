@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -34,58 +32,68 @@
 </nav>
 
 <div class="container py-5">
-  <h1>Mein Blog</h1>
-  <div id="blog-posts" class="row g-4"></div>
-</div>
+  <!-- Blog Introduction -->
+  <header class="text-center mb-4">
+    <h1>Blog (Template)</h1>
+    <p class="lead">Willkommen in meinem Blog! Hier teile ich meine Gedanken und Erfahrungen zu Webentwicklung, Softwaretechnik und mehr.</p>
+  </header>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../scripts/navbar.js"></script>
-<script src="../scripts/lang.js"></script>
-<script src="../scripts/blogs.js"></script>
-</body>
-</html>
-
-
-
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog – Abdulkadir Kavak</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/styles.css">
-  <link rel="stylesheet" href="../styles/blog.css">
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="../index.html">Abdulkadir Kavak</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link lang" href="../index.html">Start</a></li>
-        <li class="nav-item"><a class="nav-link lang" href="about.html">Über mich</a></li>
-        <li class="nav-item"><a class="nav-link lang" href="projects.html">Projekte</a></li>
-        <li class="nav-item"><a class="nav-link lang active" href="blog.html">Blog</a></li>
-        <li class="nav-item"><a class="nav-link lang" href="contact.html">Kontakt</a></li>
-        <li class="nav-item"><a class="nav-link lang" href="download.html">Download</a></li>
-        <li class="nav-item"><button class="btn btn-sm btn-outline-light ms-2" id="langToggle">🌐</button></li>
-        <li class="nav-item"><button class="btn btn-sm btn-outline-light ms-2" id="themeToggle">🌓</button></li>
-      </ul>
+  <!-- Search & Categories -->
+  <div class="row">
+    <div class="col-md-4">
+      <input type="text" class="form-control" id="searchBar" placeholder="Search Posts...">
+    </div>
+    <div class="col-md-4">
+      <select class="form-select" id="categorySelect">
+        <option selected>Kategorie wählen</option>
+        <option value="frontend">Frontend Entwicklung</option>
+        <option value="react">React</option>
+        <option value="javascript">JavaScript</option>
+        <option value="backend">Backend Entwicklung</option>
+        <!-- Add more categories as needed -->
+      </select>
     </div>
   </div>
-</nav>
 
-<div class="container py-5">
-  <h1>Mein Blog</h1>
-  <div id="blog-posts" class="row g-4"></div>
+  <!-- Blog Posts List -->
+  <div class="row py-5" id="blogPosts">
+    <!-- Post 1 -->
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <img src="../images/post-image1.jpg" class="card-img-top" alt="Post Image">
+        <div class="card-body">
+          <h5 class="card-title">Mein erster Blog Post</h5>
+          <p class="card-text">In diesem Beitrag bespreche ich meine Erfahrungen mit der Frontend-Entwicklung...</p>
+          <a href="blog/post1.html" class="btn btn-primary">Weiterlesen</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post 2 -->
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <img src="../images/post-image2.jpg" class="card-img-top" alt="Post Image">
+        <div class="card-body">
+          <h5 class="card-title">Warum ich JavaScript liebe</h5>
+          <p class="card-text">JavaScript hat die Webentwicklung revolutioniert. In diesem Post werde ich darauf eingehen...</p>
+          <a href="blog/post2.html" class="btn btn-primary">Weiterlesen</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more posts as necessary -->
+  </div>
 </div>
 
-
+<!-- Sidebar -->
+<aside class="sidebar col-md-3">
+  <h4>Popular Posts</h4>
+  <ul class="list-unstyled">
+    <li><a href="blog/post3.html">Wie man mit React arbeitet</a></li>
+    <li><a href="blog/post4.html">Die besten JavaScript-Frameworks</a></li>
+    <li><a href="blog/post5.html">Web Design: Tipps und Tricks</a></li>
+  </ul>
+</aside>
 
 <!-- Footer -->
 <footer class="bg-dark text-white text-center pt-3 pb-2 fixed-bottom">

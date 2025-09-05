@@ -1,28 +1,55 @@
+/* Blog Page Specific Styles */
 
+#blogPosts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
 
-h1, h2, h3 {
-  font-weight: 600;
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.sidebar {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.sidebar h4 {
+  font-size: 1.25rem;
   margin-bottom: 1rem;
 }
 
-.card {
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-
-h1, h2, h3 {
-  font-weight: 600;
-  margin-bottom: 1rem;
+.sidebar ul li {
+  margin-bottom: 10px;
 }
 
-.card {
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
+.sidebar ul li a {
+  color: #333;
+  text-decoration: none;
 }
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
 }
