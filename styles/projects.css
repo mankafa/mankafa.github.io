@@ -1,0 +1,48 @@
+/* Projects Page Styles */
+.project-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-card h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.project-card p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.project-card .btn {
+  margin-top: 15px;
+}
+
+/* Responsive Design for Projects */
+@media (max-width: 767px) {
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-card img {
+    max-height: 250px;
+  }
+
+  .project-card h2 {
+    font-size: 1.2rem;
+  }
+}

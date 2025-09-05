@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -8,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/projects.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -34,13 +34,57 @@
 <div class="container py-5">
   <h1>Projekte</h1>
   <p>Hier finden Sie eine Auswahl meiner bisherigen Projekte. Weitere folgen in Kürze.</p>
+  
+  <!-- EVS Project -->
+  <section class="project-card mb-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="../images/evs-project.jpg" alt="EVS - Eventhalle Verwaltung System" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
+        <h2>Eventhalle Verwaltung System (EVS)</h2>
+        <p>EVS ist ein Verwaltungssoftware-Tool für Eventhallen, entwickelt mit PHP, JavaScript, HTML und CSS. Es ermöglicht eine einfache Verwaltung von Events, Teilnehmern und Ressourcen.</p>
+        <p>Technologien: <strong>PHP, JavaScript, HTML, CSS, MySQL</strong></p>
+        <a href="http://evs.zekahub.de/pages/login.html" class="btn btn-primary" target="_blank">Demo ansehen</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Paaradis Project -->
+  <section class="project-card mb-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="../images/paaradis-marketing.jpg" alt="Paaradis Marketing App" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
+        <h2>Paaradis (Pre-launch Marketing App)</h2>
+        <p>Paaradis ist eine Dating-App mit einem schnellen Registrierungssystem für Benutzer. Es ist eine Markteinführungsanwendung, die den Nutzern eine einfache Anmeldung ermöglicht, um vorab zu registrieren.</p>
+        <p>Technologien: <strong>React, Redux, Bootstrap, Axios, Firebase</strong></p>
+        <a href="https://paaradis.com" class="btn btn-primary" target="_blank">Website besuchen</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-card mb-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="../images/paaradis-lumevin.jpg" alt="Paaradis - Lumevin App" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
+        <h2>Lumevin (Main App)</h2>
+        <p>Lumevin ist die Haupt-App von Paaradis, die ein umfangreiches Registrierungssystem und ein komplexes Onboarding-Verfahren umfasst. Die App verwendet fortschrittliche Technologien zur Benutzerauthentifizierung und zur Datenspeicherung.</p>
+        <p>Technologien: <strong>Java Spring Boot, React, Redux, React Context, Axios, MySQL</strong></p>
+        <a href="https://lumevin.de" class="btn btn-primary" target="_blank">Website besuchen</a>
+      </div>
+    </div>
+  </section>
+
 </div>
 
-<div class="container py-5">
-  <h1>Meine GitHub-Projekte</h1>
-  <div id="github-projects" class="row g-4"></div>
-</div>
-
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 fixed-bottom">
+  <p>© 2025 Abdulkadir Kavak | Softwareentwickler | <a href="mailto:abdulkadirkavak@gmail.com" style="color: #fff;">Kontakt</a></p>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../scripts/navbar.js"></script>
