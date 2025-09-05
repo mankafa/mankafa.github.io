@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -8,36 +7,166 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/about.css"> <!-- Custom About Page Styles -->
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="../index.html">Abdulkadir Kavak</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link lang" href="../index.html">Start</a></li>
-        <li class="nav-item"><a class="nav-link lang active" href="about.html">Über mich</a></li>
-        <li class="nav-item"><a class="nav-link lang" href="projects.html">Projekte</a></li>
-        <li class="nav-item"><a class="nav-link lang" href="blog.html">Blog</a></li>
-        <li class="nav-item"><a class="nav-link lang" href="contact.html">Kontakt</a></li>
-        <li class="nav-item"><a class="nav-link lang" href="download.html">Download</a></li>
-        <li class="nav-item"><button class="btn btn-sm btn-outline-light ms-2" id="langToggle">🌐</button></li>
-        <li class="nav-item"><button class="btn btn-sm btn-outline-light ms-2" id="themeToggle">🌓</button></li>
-      </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Abdulkadir Kavak</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link lang" href="../index.html">Start</a></li>
+          <li class="nav-item"><a class="nav-link lang active" href="about.html">Über mich</a></li>
+          <li class="nav-item"><a class="nav-link lang" href="projects.html">Projekte</a></li>
+          <li class="nav-item"><a class="nav-link lang" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link lang" href="contact.html">Kontakt</a></li>
+          <li class="nav-item"><a class="nav-link lang" href="download.html">Download</a></li>
+          <li class="nav-item"><button class="btn btn-sm btn-outline-light ms-2" id="langToggle">🌐</button></li>
+          <li class="nav-item"><button class="btn btn-sm btn-outline-light ms-2" id="themeToggle">🌓</button></li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container py-5">
+    <h1 class="display-4 text-center">Über mich</h1>
+    <p class="lead text-center">
+      Ich bin ein erfahrener Frontend-Entwickler mit über 25 Jahren Programmiererfahrung und über 8 Jahren Spezialisierung auf moderne Webentwicklung.
+    </p>
+    
+    <!-- About Me Section -->
+    <section class="row mt-5">
+      <div class="col-md-4">
+        <img src="../images/photo.jpg" class="img-fluid rounded-circle" alt="Abdulkadir Kavak">
+      </div>
+      <div class="col-md-8">
+        <h2>Beruflicher Werdegang</h2>
+        <p>
+          Ich begann meine Reise in der Softwareentwicklung im Jahr 1999, als ich in der High School mit Programmiersprachen wie Borland Pascal, Visual Basic und C begann. Mein Interesse an der Technik führte mich 2004 an die <strong>Middle East Technical University</strong>, wo ich einen Bachelor-Abschluss in <strong>Computer Education & Instructional Technologies</strong> (CEIT) erwarb. Dieser interdisziplinäre Studiengang ermöglichte mir sowohl tiefes Verständnis für Softwareentwicklung als auch Einblicke in die Gestaltung von Lernprozessen.
+        </p>
+        <p>
+          Nach meinem Bachelor-Abschluss 2008 arbeitete ich zunächst an einem Projekt zur Entwicklung von <strong>Serious Games</strong> als JavaScript-Programmierer und UI-Designer. Danach wechselte ich zu <strong>SEBIT A.S.</strong>, wo ich als Multimedia-Entwickler an der Entwicklung von E-Learning-Tools mitwirkte.
+        </p>
+      </div>
+    </section>
+
+    <!-- Career Progression Timeline -->
+    <section id="timeline" class="py-5">
+      <h3 class="text-center">Karriere Verlauf</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4 class="timeline-title">Frontend Developer – Pixelnauten GmbH</h4>
+          <p><em>01/2022 - 04/2025</em></p>
+          <ul>
+            <li>Wartung und Aktualisierung bestehender Benutzeroberflächen</li>
+            <li>Optimierung und Leistung von Webanwendungen</li>
+            <li>Implementierung von responsiven Designtechniken</li>
+            <li>Erstellung & Wartung von E-Mail Templates</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <h4 class="timeline-title">Frontend/Anwendungsentwickler – RealCore Maintenance GmbH</h4>
+          <p><em>01/2017 - 12/2021</em></p>
+          <ul>
+            <li>Entwicklung von Anwendungen mit dem Ionic Framework</li>
+            <li>Backend Implementierungen mit Node.js/Express.js & Symfony</li>
+            <li>Bereitstellung von Headless CMS mit Drupal</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <h4 class="timeline-title">Software/Anwendungsentwickler – Freelancer</h4>
+          <p><em>05/2015 - 08/2018</em></p>
+          <ul>
+            <li>Responsive Webentwicklung mit JavaScript, PHP, HTML und CSS</li>
+            <li>Entwicklung von eigenem CMS (EVS)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Technologies Section -->
+    <section id="skills" class="py-5">
+      <h3 class="text-center">Fähigkeiten & Technologien</h3>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Programmiersprachen</h5>
+              <ul>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>PHP</li>
+                <li>Java</li>
+                <li>HTML/CSS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Frameworks</h5>
+              <ul>
+                <li>React.js</li>
+                <li>Vue.js</li>
+                <li>Angular</li>
+                <li>Ionic</li>
+                <li>Node.js</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Tools</h5>
+              <ul>
+                <li>Git</li>
+                <li>Docker</li>
+                <li>Cypress.js</li>
+                <li>VS Code</li>
+                <li>JIRA</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Datenbanken</h5>
+              <ul>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>SQLite</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Educational Background Section -->
+    <section id="education" class="py-5">
+      <h3 class="text-center">Bildung</h3>
+      <ul>
+        <li><strong>M. Sc. Automation & Robotics</strong>, TU Dortmund (2010-2015)</li>
+        <li><strong>B. Sc. Computer Education & Instructional Technologies</strong>, Middle East Technical University (2004-2008)</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <p>© 2025 Abdulkadir Kavak | Softwareentwickler | <a href="mailto:abdulkadirkavak@gmail.com" style="color: #fff;">Kontakt</a></p>
+    </footer>
   </div>
-</nav>
 
-<div class="container py-5">
-  <h1>Über mich</h1>
-  <p>Ich bin ein erfahrener Frontend-Entwickler mit über 25 Jahren Programmiererfahrung und über 8 Jahren Spezialisierung auf moderne Webentwicklung.</p>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../scripts/navbar.js"></script>
-<script src="../scripts/lang.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../scripts/navbar.js"></script>
+  <script src="../scripts/lang.js"></script>
 </body>
 </html>
