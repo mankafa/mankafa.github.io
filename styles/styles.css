@@ -1,0 +1,34 @@
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  /*
+    background: linear-gradient(to right, #0d6efd, #0a58ca);
+    */
+}
+
+.transition {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/*   Projects Page Start   */
+/*#########################*/
+.card {
+  transition: transform 0.2s ease;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+/*#########################*/
+/*    Projects Page End    */

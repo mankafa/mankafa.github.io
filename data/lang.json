@@ -1,0 +1,12 @@
+{
+  "de": {
+    "nav": ["Start", "Über mich", "Projekte", "Blog", "Kontakt", "Download"],
+    "greeting": "Willkommen auf meiner professionellen Portfolio-Seite.",
+    "resumeBtn": "📄 Lebenslauf herunterladen"
+  },
+  "en": {
+    "nav": ["Home", "About", "Projects", "Blog", "Contact", "Download"],
+    "greeting": "Welcome to my professional portfolio site.",
+    "resumeBtn": "📄 Download CV"
+  }
+}

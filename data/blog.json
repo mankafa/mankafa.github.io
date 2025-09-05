@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Meine ersten Schritte mit React",
+    "date": "2024-11-01",
+    "excerpt": "Ich teile meine Erfahrungen mit React als Frontend-Entwickler…",
+    "slug": "react-erste-schritte"
+  },
+  {
+    "title": "Dark Mode mit CSS & JS umsetzen",
+    "date": "2025-02-15",
+    "excerpt": "Ein einfacher Weg, wie man Dark/Light Mode elegant implementieren kann…",
+    "slug": "darkmode-css-js"
+  }
+]
